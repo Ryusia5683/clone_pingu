@@ -1,0 +1,113 @@
+@import url(./common.css);
+
+
+.container .content{ overflow: initial; }
+.container .content .snow{ top: 350px; height: 90%;}
+.container .content .content_title{ 
+    width: 100%; height: 100%;
+    min-height: 700px;
+    padding: 40px 0;
+    position: relative;
+    background-color: #00a0e9;
+}
+.container .content .content_title .title{ 
+    width: 37.895%; margin: 0 auto; 
+    min-width: 720px;
+}
+/* .container .content .content_title::before{ 
+    content:'';
+    position: absolute;
+    width: 49.474%; height: 18.52%;
+    min-width: 900px; 
+    margin: 0 auto;
+    background: url(../img/common/cloud_left.gif) no-repeat left center, url(../img/common/cloud_right.gif) no-repeat right center;
+    left: 8%; top: 4.737%;
+    z-index: 1;
+} */
+.container .content .content_title .title_deco{
+    width: 49.474%; height: 18.52%;
+    min-width: 900px;
+    margin: 0 auto -4.737%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.container .content .content_title .title_deco > figure{ width: 150px; height: 150px; }
+.container .content .content_title .title_deco > figure > img{ width: 100%; }
+.container .content .content_title::after{
+    content: '';
+    position: absolute;
+    background: url(../img/common/frame_ice.png) repeat-x left bottom;
+    width: 100%; height: 45px;
+    bottom: 0; 
+}
+.container .content .content_title .title > a{ 
+    width: 100%; 
+    display: inline-block;
+    position: relative;
+    animation: title_op 0.5s 0.2s ease backwards;
+}
+@keyframes title_op{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+.container .content .content_title .title > a::after{
+    content: '';
+    position: absolute;
+    background: url(../img/top/kv_frame.png) no-repeat center center;
+    background-size: cover;
+    width: 100%; height: 100%;
+    left: 0;
+}
+.container .content .content_title .title > a > img{ width: 100%; }
+
+.container .content .content_txt{
+    margin: 3% auto 0;
+    width: 34.211%; min-width: 650px;
+}
+.container .content .content_txt > ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .content .content_txt > ul > li{
+    margin-bottom: 10.77%;
+}
+.container .content .content_txt > ul > li > a{
+    display: inline-block;
+    position: relative;
+}
+.container .content .content_txt > ul > li > a::after{
+    content: '';
+    width: 16.78%; height: 17.483%;
+    position: absolute;
+    background: url(../img/top/arrow_menu2.png) no-repeat center center;
+    background-size: 100% auto;
+    left: 40%; bottom: 5%;
+    transition: 0.2s ease;
+}
+.container .content .content_txt > ul > li:hover > a::after{
+    transform: translateX(30%);
+}
+.container .content .content_txt > ul > li > a > img{ width: 100%; }
+
+
+
+.container .banner > ul{ justify-content: center; }
+.container .banner > ul > li{ margin: 2.964%; }
+
+
+
+/* ============================1080======================== */
+@media (max-width < 1080px){
+    .container .content .content_title{ 
+        min-height: 380px;
+        padding: 40px 0 10px;
+    }
+    .container .content .content_title .title{ 
+        width: 100%; margin: 0 auto; 
+        min-width: none; max-width: 720px;
+    }
+}
