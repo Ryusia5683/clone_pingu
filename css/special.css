@@ -113,6 +113,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 .container .content .content_txt .craft > li > p{ 
     width: 48.18%;
