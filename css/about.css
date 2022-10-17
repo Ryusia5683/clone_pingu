@@ -125,3 +125,17 @@
     line-height: 1.8;
 }
 
+/* ============================1080======================== */
+@media (max-width: 1080px){
+    .container .content .content_title .title{ 
+        width: 100%; margin: 0 auto; 
+        max-width: 650px;
+    }
+    .container .content .content_title .title_deco{
+        min-width: 750px;
+    }
+    .container .content .content_txt{ min-width: 769px; }
+    .container .content .content_txt .intro{ min-width: 650px; }
+    .container .content .content_txt .character > ul{ min-width: 650px; }
+/* ==========================1080 end======================= */
+}

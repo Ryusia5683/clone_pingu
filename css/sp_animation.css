@@ -133,3 +133,25 @@
 }
 
 
+/* ============================1080======================== */
+@media (max-width: 1080px){
+    .container .content .content_title .title{ 
+        width: 100%; margin: 0 auto; 
+        max-width: 650px;
+    }
+    .container .content .content_title .title_deco{
+        min-width: 750px;
+    }
+    .container .content .content_txt{ min-width: 769px; }
+    .container .content .content_txt::before{
+        animation: bg_yellow 20s linear infinite;
+        background-size: 50% auto;
+        top: -16px;
+    }
+    .container .content .content_txt > ul{ 
+        min-width: 755px; 
+        margin: 30px auto;
+    }
+
+/* ==========================1080 end======================= */
+}

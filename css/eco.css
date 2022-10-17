@@ -118,3 +118,23 @@
 .container .content .content_txt > div .book_nav > div > figure:hover > img{ transform: translateY(-50%); }
 
 
+
+/* ============================1080======================== */
+@media (max-width: 1080px){
+    .container .content .content_title .title{ 
+        width: 100%; margin: 0 auto; 
+        max-width: 650px;
+    }
+    .container .content .content_title .title_deco{
+        min-width: 750px;
+    }
+    .container .content .content_txt{ min-width: 769px; }
+    .container .content .content_txt::before{
+        animation: bg_lgt_yellow 15s linear infinite;
+        background-size: 50% auto;
+        top: -10px;
+    }
+    .container .content .content_txt > div .book{ min-width: 755px; }
+
+/* ==========================1080 end======================= */
+}

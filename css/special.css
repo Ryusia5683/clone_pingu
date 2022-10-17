@@ -182,3 +182,33 @@
     transform: translateY(-15%);
 }
 
+
+/* ============================1080======================== */
+@media (max-width: 1080px){
+    .container .content .content_title .title{ 
+        width: 100%; margin: 0 auto; 
+        max-width: 650px;
+    }
+    .container .content .content_title .title_deco{
+        min-width: 750px;
+    }
+    .container .content .content_txt{ min-width: 769px; }
+    .container .content .content_txt::before{
+        animation: bg_light_blue 20s linear infinite;
+        background-size: 50% auto;
+        top: -10px;
+    }
+    .container .content .content_txt .craft{ min-width: 755px; }
+    .container .content .content_txt .craft > li > div > a{ 
+        width: 100%; height: 69.45px;
+        display: block;
+        background: url(../img/special/btn_download_off.png) 0 0 / contain no-repeat;
+        transition: 0.4s ease;
+    }
+    .container .content .content_txt .craft > li > div > a:hover{
+        background: url(../img/special/btn_download_on.png) 0 0 / contain no-repeat;
+        width: 100%;
+    } 
+
+/* ==========================1080 end======================= */
+}

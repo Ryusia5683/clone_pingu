@@ -146,3 +146,34 @@
 .container .content .content_txt .index > div > ul > li > figure > img{ width: 100%; }
 
 
+/* ============================1080======================== */
+@media (max-width: 1080px){
+    .container .content .content_title .title{ 
+        width: 100%; margin: 0 auto; 
+        max-width: 650px;
+    }
+    .container .content .content_title .title_deco{
+        min-width: 750px;
+    }
+    .container .content .content_txt .film_nav::before{
+        background-size: 50% auto;
+        animation: bg_yellow 20s linear infinite;
+        top: -10px;
+    }
+    .container .content .content_txt .film_nav::after{
+        background-size: 50% auto;
+        animation: bg_yellow_btm 20s linear infinite;
+        bottom: -10px;
+    }
+    .container .content .content_txt .film_nav > ul{ min-width: 769px; }
+    .container .content .content_txt .film_nav > ul > li{ width: 29%; }
+    
+    .container .content .content_txt .index{ min-width: 769px; }
+    .container .content .content_txt .index .index_txt > p{ min-width: 730px; }
+    .container .content .content_txt .index > div{ min-width: 760px; }
+
+
+
+
+/* ==========================1080 end======================= */
+}
