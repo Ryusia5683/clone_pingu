@@ -35,7 +35,7 @@
     bottom: 0;
 }
 .container .content .content_title > h2{ 
-    width: 28.948%; min-width: 550px;
+    width: 28.948%; min-width: 530px;
     margin: -90px auto 0;
 }
 .container .content .content_title > h2 > img{ width: 100%; }

@@ -293,7 +293,9 @@ a{text-decoration: none;}
     margin: 2.964% 0;
     z-index: 1;
 }
-.container .banner > ul > li > a{}
+.container .banner > ul > li > a{
+    display: inline-block;
+}
 .container .banner > ul > li > a > img{ width: 100%; }
 
 .container > footer{
