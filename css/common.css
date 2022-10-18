@@ -136,7 +136,7 @@ a{text-decoration: none;}
 
 .container > header .screen{
     left: 0; top: 0;
-    width: 100%; height: 685%;
+    width: 100vw; height: 200vmax;
     margin: 0; padding: 0;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
@@ -426,27 +426,52 @@ a{text-decoration: none;}
 @media (max-width: 768px){
     .container{ min-width: 320px; max-width: 768px;}
     .container .btn_menu{ display: block; }
+    .container > header{height: 50px;}
     .container > header::after{
         animation: cloud_menu 40s linear infinite;
         bottom: -44px;
     }
     .container > header > div{
-    max-width: none; min-width: min-content;
+    height: 100px;
     }
     .container > header > div > h1{ 
     min-width: 130px;
-    top: 30px;
+    top: -30px;
     }
 
     
-    .container > header > div > nav{ width: 65%; }
-    .container > header > div > nav > ul{ 
+    .container > header > div > nav{}
+    .container > header > div > nav > ul{
+        width: 65vw;  height: 100%; 
         position: fixed;
+        background-color: rgba(255, 255, 255, 0.8);
         left: 0; top: 0;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in-out;
+        z-index: 5;
     }
+    .container > header > div > nav > ul > li{ margin: 50px auto; }
+    .container > header > div > nav > ul > li > a{ 
+        display: block; 
+        text-align: center;
+        letter-spacing: .3em;
+        font-size: 2em;
+    }
+    .container > header > div > nav > ul > li:nth-child(1){ margin-left: auto; }
+    .container > header > div > nav > ul > li:nth-child(4){ margin-left: auto; }
+    .container > header > div > nav > ul > li:nth-child(6) > a{
+        display: inline-block;
+        padding: 2px 8px;
+        font-size: 1em;
+    }
+    /* nav.active{
+        transform: translateX(-100%);
+    } */
+    /* .btn_menu.active + header .screen{ display: block; } */
+
     .container .page_top{ 
         min-width: 412px; 
         width: 80%;
