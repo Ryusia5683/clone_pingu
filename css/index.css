@@ -113,5 +113,13 @@
     .container .content .content_title .title_deco{
         min-width: 750px;
     }
+
+    .container .banner > ul{ 
+        justify-content: space-between; 
+        width: 90%;
+    }
+    .container .banner > ul > li{
+        width: 42%;
+    }
 /* ==========================1080 end======================= */
 }

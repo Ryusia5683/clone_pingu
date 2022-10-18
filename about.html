@@ -183,11 +183,13 @@
 
 
     <script>
-        const btn_menu = document.querySelector('.btn_menu');
-        
-        btn_menu.onclick=function(){
-            btn_menu.classList.toggle('active');
-        }
+            const btn_menu = document.querySelector('.btn_menu');
+            const nav = document.querySelector('.nav');
+            
+            btn_menu.onclick = function(){
+                btn_menu.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
 
         const sb_top = document.querySelector('.container .page_top figure')
 

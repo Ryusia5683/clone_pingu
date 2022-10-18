@@ -20,10 +20,11 @@ a{text-decoration: none;}
 
 
 
-.container{ min-width: 1080px; max-width: 1900px; }
+.container{ min-width: 1080px; max-width: 1900px; overflow: hidden; }
 
 .container .btn_menu{
     width: 58px; height: 62px;
+    position: relative;
     z-index: 100;
     display: none;
 }
@@ -254,7 +255,7 @@ a{text-decoration: none;}
 
 .container .banner{ 
     width: 100%; 
-    padding: 3.685% 0 3.158% 0;
+    padding: 70px 0;
     background-color: #304296;
     position: relative;
     z-index: 3;
@@ -306,7 +307,7 @@ a{text-decoration: none;}
 
 .container > footer{
     width: 100%;
-    padding: 1.7% 0;
+    padding: 50px 0;
     position: relative;
 }
 .container > footer::before{
@@ -434,11 +435,11 @@ a{text-decoration: none;}
         bottom: -44px;
     }
     .container > header > div{
-    height: 100px;
+    height: 100px; min-width: 320px;
     }
     .container > header > div > h1{ 
-    min-width: 130px;
-    top: -30px;
+    min-width: 100px;
+    top: -30px; left: 50%;
     }
 
     
@@ -469,15 +470,17 @@ a{text-decoration: none;}
         padding: 2px 8px;
         font-size: 1em;
     }
-    .container > header > div > ul{
-        transform: translateX(-100%);
+    .nav.active{
+        transform: translateX(0);
     }
-    /* .btn_menu.active + header .screen{ display: block; } */
 
     .container .page_top{ 
         min-width: 412px; 
         width: 80%;
+        text-align: center;
     }
+
+    .container .banner{}
     .container .banner::before{
         background-size: 400px auto;
         top: -10px;
@@ -487,11 +490,84 @@ a{text-decoration: none;}
         background-size: 650px auto;
         animation: bg_star 70s linear infinite;
     }
-    .container > footer::before{
-        top: -10px;
-        background-size: 400px auto;
-        z-index: 3;
+    .container .banner > ul{ 
+        width: 675px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+    .container .banner > ul > li{ 
+        width: 27.409%; 
+        margin: 2.964% 0;
+        z-index: 1;
+    }
+    .container .banner > ul > li > a{
+        display: inline-block;
+        transition: 0.2s ease;
+    }
+    .container .banner > ul > li > a:hover{
+        transform: translateY(-10%);
+    }
+    .container .banner > ul > li > a > img{ width: 100%; }
+    
+
+
+
     .container > footer > div{ min-width: 750px; }
+
+    .container > footer > div{ 
+        width: 100%; min-width: 750px;
+        flex-direction: column;
+    }
+    .container > footer > div .share{ 
+        order: 1;
+        width: 70%;
+        display: block;
+        text-align: center;
+    }
+    .container > footer > div .share > li{ 
+        margin: 20px 10px 0 10px;
+        width: 10%;
+        display: inline-block;
+    }
+    .container > footer > div .share > li:nth-child(1){
+        margin: 0 auto; 
+        width: 20%;
+        display: block;
+    }
+    .container > footer > div .share > li > figure{ width: 100%; }
+    .container > footer > div .share > li > figure > img{ width: 100%; }
+    .container > footer > div .share > li > a{ 
+        width: 100%;
+        display: inline-block;
+    }
+    .container > footer > div .share > li:nth-child(2) > a{
+        transition: 0.2s ease;
+    }
+    .container > footer > div .share > li:nth-child(3) > a{
+        transition: 0.2s ease;
+    }
+    .container > footer > div .share > li:nth-child(2) > a:hover{
+        transform: rotate(-45deg);
+    }
+    .container > footer > div .share > li:nth-child(3) > a:hover{
+        transform: rotate(-45deg);
+    }
+    .container > footer > div .share > li > a > img{ width: 100%; }
+    .container > footer > div .copyright{ 
+        order: 2;
+        margin: 10px auto 0;
+        width: 70%;
+        display: block;
+    }
+    .container > footer > div .copyright > li{ 
+        display: inline-block; 
+        vertical-align: bottom; 
+        margin-left: 22%;
+    }
+    .container > footer > div .copyright > li:nth-child(1){ width: 10%; }
+    .container > footer > div .copyright > li:nth-child(2){ width: 50%; margin-left: 10%; }
+    .container > footer > div .copyright > li > figure{ width: 100%; }
+    .container > footer > div .copyright > li > figure > img{ width: 100%; }
 /* =========================1080 end====================== */
 }
