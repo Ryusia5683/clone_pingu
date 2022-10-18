@@ -237,6 +237,8 @@ a{text-decoration: none;}
     width: 53.684%; min-width: 1020px;
     margin: 0 auto;
     text-align: right;
+    position: relative;
+    z-index: 1;
 }
 .container .page_top > figure{ 
     width: 80px; 
@@ -467,9 +469,9 @@ a{text-decoration: none;}
         padding: 2px 8px;
         font-size: 1em;
     }
-    /* nav.active{
+    .container > header > div > ul{
         transform: translateX(-100%);
-    } */
+    }
     /* .btn_menu.active + header .screen{ display: block; } */
 
     .container .page_top{ 

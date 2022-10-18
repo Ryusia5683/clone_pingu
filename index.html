@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://ryusia5683.github.io/clone_pingu/" />
+    <meta property="og:type"               content="website" /> <!-- default -->
+    <meta property="og:title"              content="Pingu_eng" />
+    <meta property="og:description"        content="Claymation 'Pingu'" />
+    <meta property="og:image"              content="./img/images.jpg" />
+    
+    <meta property="twitter:url"           content="https://ryusia5683.github.io/clone_pingu/" />
+    <meta property="twitter:card"          content="summary" /> <!-- default -->
+    <meta property="twitter:site"          content="Pingu_web" />    
+    <meta property="twitter:title"         content="Pingu_eng" />
+    <meta property="twitter:description"   content="Claymation 'Pingu'" />
+    <meta property="twitter:image"         content="./img/images.jpg" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
@@ -27,7 +39,7 @@
                     </a>
                 </h1>
                 <nav>
-                    <ul class="nav">
+                    <ul class>
                         <li>
                             <a href="./index.html">TOP</a>
                         </li>
@@ -159,9 +171,9 @@
 
         <script>
             const btn_menu = document.querySelector('.btn_menu');
-            const nav = document.querySelector('nav > ul')
+            const nav = document.querySelector('.container header ul');
             
-            btn_menu.onclick=function(){
+            btn_menu.onclick = function(){
                 btn_menu.classList.toggle('active');
                 nav.classList.toggle('active');
             }

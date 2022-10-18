@@ -135,6 +135,7 @@
         top: -10px;
     }
     .container .content .content_txt > div .book{ min-width: 755px; }
+    .container .page_top > figure > img{ z-index: 2; }
 
 /* ==========================1080 end======================= */
 }
