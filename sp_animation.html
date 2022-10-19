@@ -39,7 +39,7 @@
                     </a>
                 </h1>
                 <nav>
-                    <ul>
+                    <ul class="nav">
                         <li>
                             <a href="./index.html">TOP</a>
                         </li>
@@ -189,9 +189,11 @@
 
         <script>
             const btn_menu = document.querySelector('.btn_menu');
+            const nav = document.querySelector('.nav');
             
             btn_menu.onclick=function(){
                 btn_menu.classList.toggle('active');
+                nav.classList.toggle('active');
             }
     
             const sb_top = document.querySelector('.container .page_top figure')
