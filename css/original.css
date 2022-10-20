@@ -161,10 +161,6 @@
 
 /* ============================1080======================== */
 @media (max-width: 1080px){
-    .container .content .content_title .title{ 
-        width: 100%; margin: 0 auto; 
-        max-width: 650px;
-    }
     .container .content .content_title .title_deco{
         min-width: 750px;
     }
@@ -274,9 +270,3 @@
     .container .content .content_txt .film_index > ul > li > p{ line-height: 2; }
 }
 /* ======================768 end========================= */
-
-@media (max-width: 425px){
-    .container .content .content_txt .film_nav::before{ top: -6.92px; }
-    .container .content .content_txt .film_nav::after{ bottom: -6.17px;}
-    .container .content .content_txt .film_index > ul{ padding: 0; }
-}

@@ -127,10 +127,6 @@
 
 /* ============================1080======================== */
 @media (max-width: 1080px){
-    .container .content .content_title .title{ 
-        width: 100%; margin: 0 auto; 
-        max-width: 650px;
-    }
     .container .content .content_title .title_deco{
         min-width: 750px;
     }
@@ -142,9 +138,6 @@
 
 /* ==========================768=========================== */
 @media (max-width: 768px){
-    
-    .container .content .content_title{ min-height: 150px; }
-
     .container .content .content_title .title_deco{
         min-width: 300px; width: 100%;
     }
@@ -194,16 +187,12 @@
         padding: 0 30px;
     }
     .container .content .content_txt .character > ul::before{
-        right: 20vmin; top: -23vh;
-        width: 280px; height: 118px;
+        width: 40%; height: 3%;
+        right: 30%; top: -4%;
     }
     .container .content .content_txt .character > ul::after{
-        content: '';
-        position: absolute;
-        background: url(../img/about/decor_cha_04.png) no-repeat left bottom;
         width: 38.4%; height: 5.975%;
-        background-size: 100% auto;
-        left: 5%; bottom: 9%;
+        left: 30%; bottom: -4%;
     }
     .container .content .content_txt .character > ul > li{ 
         margin-bottom: 100px;
@@ -218,6 +207,7 @@
     .container .content .content_txt .character > ul > li:nth-child(5){
         margin-top: 0;
     }
+    .container .content .content_txt .character > ul > li:nth-child(6){ margin-bottom: 40%; }
     .container .content .content_txt .character > ul > li > figure{ margin-bottom: 6.67%; }
     .container .content .content_txt .character > ul > li > figure > img{ width: 100%;}
     .container .content .content_txt .character > ul > li > p{ 

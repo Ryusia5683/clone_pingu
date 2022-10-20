@@ -160,74 +160,16 @@ a{text-decoration: none;}
     left: 0; top: 0;
     z-index: -1;
 }
-.container .content .snow > div{ 
-    width: 15px; height: 15px; 
+.container .content .snow > p{
     position: absolute;
     left: 0; top: 0;
-    z-index: -1;
-}
-.container .content .snow > div > p{
-    width: 100%; height: 100%;
     background: url(../img/common/bg/bg_snow.png) no-repeat center center;
     background-size: contain;
     z-index: -1;
-    animation: snow_rotate 10s linear infinite;
-}
-.container .content .snow > div:nth-child(1){ 
-    width: 24px; height: 24px; left: 530px; 
-    animation: snow_fall 17s 17s linear infinite;
-}
-.container .content .snow > div:nth-child(2){ 
-    width: 21px; height: 21px; left: 896px; 
-    animation: snow_fall 24s 20s linear infinite;
-}
-.container .content .snow > div:nth-child(3){ 
-    width: 26px; height: 26px; left: 1177px; 
-    animation: snow_fall 27s 10s linear infinite;
-}
-.container .content .snow > div:nth-child(4){ 
-    width: 33px; height: 33px; left: 1214px;
-    animation: snow_fall 30s 9s linear infinite;
-}
-.container .content .snow > div:nth-child(5){ 
-    width: 21px; height: 21px; left: 1001px; 
-    animation: snow_fall 17s 19s linear infinite;
-}
-.container .content .snow > div:nth-child(6){ 
-    width: 26px; height: 26px; left: 910px; 
-    animation: snow_fall 26s 5s linear infinite;
-}
-.container .content .snow > div:nth-child(7){ 
-    width: 30px; height: 30px; left: 1891px; 
-    animation: snow_fall 18s 37s linear infinite;
-}
-.container .content .snow > div:nth-child(8){ 
-    width: 22px; height: 22px; left: 80px; 
-    animation: snow_fall 23s 39s linear infinite;
-}
-.container .content .snow > div:nth-child(9){ 
-    width: 35px; height: 35px; left: 358px; 
-    animation: snow_fall 22s 28s linear infinite;
-}
-.container .content .snow > div:nth-child(10){ 
-    width: 31px; height: 31px; left: 404px; 
-    animation: snow_fall 25s 11s linear infinite;
-}
-.container .content .snow > div:nth-child(11){ 
-    width: 26px; height: 26px; left: 1503px; 
-    animation: snow_fall 20s 22s linear infinite;
-}
-.container .content .snow > div:nth-child(12){ 
-    width: 28px; height: 28px; left: 1785px; 
-    animation: snow_fall 21s 7s linear infinite;
-}
-.container .content .snow > div:nth-child(13){ 
-    width: 27px; height: 27px; left: 852px; 
-    animation: snow_fall 26s 30s linear infinite;
 }
 @keyframes snow_fall{
-    0%{transform: translateY(0);}
-    100%{transform: translateY(1700px);}
+    0%{ top: -50px; }
+    100%{ top: 100%; }
 }
 @keyframes snow_rotate{
     0%{ transform: rotate(0); }
@@ -437,8 +379,8 @@ a{text-decoration: none;}
 /* =========================768============================ */
 @media (max-width: 768px){
     .container{ min-width: 320px; max-width: 768px;}
-    .container .btn_menu{ display: block; }
-    .container > header{height: 50px;}
+    .container .btn_menu{ display: block; position: fixed; }
+    .container > header{ height: 100px; }
     .container > header::after{
         animation: cloud_menu 40s linear infinite;
         bottom: -44px;
@@ -448,7 +390,7 @@ a{text-decoration: none;}
     }
     .container > header > div > h1{ 
     min-width: 100px;
-    top: -30px; left: 50%;
+    top: 30px; left: 50%;
     }
 
     
