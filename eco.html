@@ -78,70 +78,14 @@
             <div class="content_txt">
                 <div>
                     <div class="book">
-                        <div class="page_no">
+                        <!-- <div class="page">
                             <figure>
                                 <img src="./img/ecology/p_01.gif" alt="p1_l">
                             </figure>
                             <figure>
                                 <img src="./img/ecology/p_02.gif" alt="p1_r">
                             </figure>
-                        </div>
-                        <div class="page_no">
-                            <figure>
-                                <img src="./img/ecology/p_03.gif" alt="p2_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_04.gif" alt="p2_r">
-                            </figure>
-                        </div>
-                        <div class="page_no">
-                            <figure>
-                                <img src="./img/ecology/p_05.gif" alt="p3_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_06.gif" alt="p3_r">
-                            </figure>
-                        </div>
-                        <div class="page_no">
-                            <figure>
-                                <img src="./img/ecology/p_07.gif" alt="p4_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_08.gif" alt="p4_r">
-                            </figure>
-                        </div>
-                        <div class="page_no">
-                            <figure>
-                                <img src="./img/ecology/p_09.gif" alt="p5_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_10.gif" alt="p5_r">
-                            </figure>
-                        </div>
-                        <div class="page_no">
-                            <figure>
-                                <img src="./img/ecology/p_11.gif" alt="p6_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_12.gif" alt="p6_r">
-                            </figure>
-                        </div>
-                        <div class="page_no">
-                            <figure>
-                                <img src="./img/ecology/p_13.gif" alt="p7_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_14.gif" alt="p7_r">
-                            </figure>
-                        </div>
-                        <div class="page_no">
-                            <figure>
-                                <img src="./img/ecology/p_15.gif" alt="p8_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_16.gif" alt="p8_r">
-                            </figure>
-                        </div>
+                        </div> -->
                     </div>
                     <nav class="book_nav">
                         <div>
@@ -259,6 +203,94 @@
             elSnow[i].style = `width: ${snowSize}px; height: ${snowSize}px; left: ${snowPosi(windowWid)}px; animation: snow_fall ${snowProp(30)}s ${snowProp(20)}s linear infinite, snow_rotate 10s linear infinite`;
         });
 
+
+        const book = document.querySelector('.book');
+        const btnNext = document.querySelector('.page_next');
+        const btnPrev = document.querySelector('.page_prev');
+
+        let bookImg = [
+            {
+                leftImg : '01',
+                leftAlt : 'L',
+                rightImg : '02',
+                rightAlt : 'R'
+            },
+            {
+                leftImg : '03',
+                leftAlt : 'L',
+                rightImg : '04',
+                rightAlt : 'R'
+            },
+            {
+                leftImg : '05',
+                leftAlt : 'L',
+                rightImg : '06',
+                rightAlt : 'R'
+            },
+            {
+                leftImg : '07',
+                leftAlt : 'L',
+                rightImg : '08',
+                rightAlt : 'R'
+            },
+            {
+                leftImg : '09',
+                leftAlt : 'L',
+                rightImg : '10',
+                rightAlt : 'R'
+            },
+            {
+                leftImg : '11',
+                leftAlt : 'L',
+                rightImg : '12',
+                rightAlt : 'R'
+            },
+            {
+                leftImg : '13',
+                leftAlt : 'L',
+                rightImg : '14',
+                rightAlt : 'R'
+            },
+            {
+                leftImg : '15',
+                leftAlt : 'L',
+                rightImg : '16',
+                rightAlt : 'R'
+            }
+        ];
+        let curPage = '';
+        bookImg.forEach(element => {
+            curPage += `<div>
+                <figure><img src="./img/ecology/p_${element.leftImg}.gif" alt="p01_${element.leftAlt}"></figure>
+                <figure><img src="./img/ecology/p_${element.rightImg}.gif" alt="p01_${element.rightAlt}"></figure>
+            </div>`;
+        })
+        book.innerHTML = curPage;
+
+        // const page = document.querySelectorAll('.book div');
+        // page[0].classList.add('active');
+        // function nextPage(idx) {
+        //     page[idx].classList.add('active');
+        //     page[idx-1].classList.remove('active');
+        // }
+        
+        // btnNext.addEventListener('click', function(){
+        //     page.forEach( (ele,idx) => {
+        //         nextPage(idx+1);
+        //     });
+        // })
+        // btnPrev.addEventListener('click',)
+
+
+        // ./img/ecology/p_01.gif
+        // <div>
+        //                     <figure>
+        //                         <img src="./img/ecology/p_01.gif" alt="p1_l">
+        //                     </figure>
+        //                     <figure>
+        //                         <img src="./img/ecology/p_02.gif" alt="p1_r">
+        //                     </figure>
+        //                 </div>
 
 
         // let a = 0;

@@ -78,7 +78,7 @@
 
 .container .content .content_txt > div .book{
     width: 47.368%; min-width: 900px;
-    margin: 130px auto 45px;
+    margin: 6.843% auto 2.369%;
 }
 .container .content .content_txt > div .book > div{ 
     width: 100%;
@@ -87,7 +87,8 @@
     z-index: 10;
     display: none;
 }
-.container .content .content_txt > div .book > div:nth-child(1){ display: flex; }
+/* .container .content .content_txt > div .book > div:nth-child(1){ display: flex; } */
+.container .content .content_txt > div .book > div.active{ display: flex; }
 .container .content .content_txt > div .book > div > figure{ width: 50%; }
 .container .content .content_txt > div .book > div > figure > img{ width: 100%; }
 
@@ -162,6 +163,6 @@
         display: none;
         z-index: 10;
     }
-    .container .content .content_txt > div .book > div:nth-child(1){ display: flex; }
+    /* .container .content .content_txt > div .book > div:nth-child(1){ display: flex; } */
 }
 /* ======================768 end========================= */
