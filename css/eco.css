@@ -84,10 +84,10 @@
     width: 100%;
     display: flex;
     position: relative;
-    z-index: 10;
+    z-index: 4;
     display: none;
 }
-/* .container .content .content_txt > div .book > div:nth-child(1){ display: flex; } */
+
 .container .content .content_txt > div .book > div.active{ display: flex; }
 .container .content .content_txt > div .book > div > figure{ width: 50%; }
 .container .content .content_txt > div .book > div > figure > img{ width: 100%; }
@@ -157,12 +157,9 @@
     .container .content .content_txt > div .book{
         width: 90%; min-width: 420px;
     }
-    .container .content .content_txt > div .book > div{ 
-        width: 100%;
+    .container .content .content_txt > div .book > div{
         display: flex;
         display: none;
-        z-index: 10;
     }
-    /* .container .content .content_txt > div .book > div:nth-child(1){ display: flex; } */
 }
 /* ======================768 end========================= */
