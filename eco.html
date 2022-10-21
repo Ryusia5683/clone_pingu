@@ -268,18 +268,29 @@
         book.innerHTML = curPage;
 
         const page = document.querySelectorAll('.book div');
+        let idxNext = 0;
+        let idxPrev = 8;
+
         page[0].classList.add('active');
-        // function nextPage(idx) {
-        //     page[idx].classList.add('active');
-        //     page[idx-1].classList.remove('active');
+        function nextPage(i) {
+            page[i-1].classList.remove('active');
+            page[i].classList.add('active');
+        }
+        // function prevPage(i){
+        //     page[i].classList.remove('active');
+        //     page[i-1].classList.add('active');
         // }
         
-        // btnNext.addEventListener('click', function(){
-        //     page.forEach( (ele,idx) => {
-        //         nextPage(idx+1);
-        //     });
+        btnNext.addEventListener('click', function(){
+            if(idxNext < page.length-1){
+                nextPage(++idxNext);
+            }
+        })
+        // btnPrev.addEventListener('click', function(){
+        //     if(idxPrev > 0){
+        //         prevPage(idxPrev--);
+        //     }
         // })
-        // // btnPrev.addEventListener('click',)
 
 
         // ./img/ecology/p_01.gif
