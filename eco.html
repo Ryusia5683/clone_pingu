@@ -78,14 +78,6 @@
             <div class="content_txt">
                 <div>
                     <div class="book">
-                        <!-- <div class="page">
-                            <figure>
-                                <img src="./img/ecology/p_01.gif" alt="p1_l">
-                            </figure>
-                            <figure>
-                                <img src="./img/ecology/p_02.gif" alt="p1_r">
-                            </figure>
-                        </div> -->
                     </div>
                     <nav class="book_nav">
                         <div>
@@ -200,7 +192,7 @@
         elSnow.forEach(function(p,i){
             snowProp()
             let snowSize = snowProp(25);
-            elSnow[i].style = `width: ${snowSize}px; height: ${snowSize}px; left: ${snowPosi(windowWid)}px; animation: snow_fall ${snowProp(30)}s ${snowProp(20)}s linear infinite, snow_rotate 10s linear infinite`;
+            elSnow[i].style = `width: ${snowSize}px; height: ${snowSize}px; left: ${snowPosi(windowWid)}px; animation: snow_fall ${snowAni(30)}s ${snowAni(20)}s linear infinite, snow_rotate 10s linear infinite`;
         });
 
 
@@ -290,35 +282,6 @@
                 prevPage(idx--);
             }
         })
-
-
-        // ./img/ecology/p_01.gif
-        // <div>
-        //                     <figure>
-        //                         <img src="./img/ecology/p_01.gif" alt="p1_l">
-        //                     </figure>
-        //                     <figure>
-        //                         <img src="./img/ecology/p_02.gif" alt="p1_r">
-        //                     </figure>
-        //                 </div>
-
-
-        // let a = 0;
-        // const page_next = document.querySelector('.page_next')
-
-        // page_next.onclick = function(){ a++ }
-
-        // const page_prev = document.querySelector('.page_prev')
-
-        // page_prev.onclick = function(){ a-- }
-
-        // const page_no = document.querySelectorAll('.page_no')
-
-        // page_no.values
-        // if (a=1) {
-            
-        // }
-
 
     </script>
 

@@ -14,16 +14,7 @@
     width: 37.895%; margin: 0 auto; 
     min-width: 720px;
 }
-/* .container .content .content_title::before{ 
-    content:'';
-    position: absolute;
-    width: 49.474%; height: 18.52%;
-    min-width: 900px; 
-    margin: 0 auto;
-    background: url(../img/common/cloud_left.gif) no-repeat left center, url(../img/common/cloud_right.gif) no-repeat right center;
-    left: 8%; top: 4.737%;
-    z-index: 1;
-} */
+
 .container .content .content_title .title_deco{
     width: 49.474%; height: 18.52%;
     min-width: 900px;
@@ -126,7 +117,7 @@
     .container .content .content_title .title_deco{
         min-width: 320px; width: 100%;
     }
-    .container .content .content_title .title_deco > figure{ width: 140px; height: 140px; }
+    .container .content .content_title .title_deco > figure{ width: 100px; height: 100px; }
     .container .content .content_title .title{ 
         width: 100%; margin: 0 auto; 
         max-width: 650px; min-width: 300px;

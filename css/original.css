@@ -173,7 +173,7 @@
     .container .content .content_txt .film_nav::after{
         background-size: 50% auto;
         animation: bg_yellow_btm 20s linear infinite;
-        bottom: -10px;
+        bottom: -1.15vh;
     }
     .container .content .content_txt .film_nav > ul{ min-width: 769px; }
     .container .content .content_txt .film_nav > ul > li{ margin-top: -5vh; }

@@ -209,14 +209,12 @@
     }
 
 
-    .container .content .content_txt .film_nav::before{
-        background-size: 50% auto;
-        animation: bg_yellow 20s linear infinite;
+    .container .content .content_txt .film_nav::before{ 
+        animation: bg_yellow 15s linear infinite;
         top: -0.5vh;
     }
     .container .content .content_txt .film_nav::after{
-        background-size: 50% auto;
-        animation: bg_yellow_btm 20s linear infinite;
+        animation: bg_yellow_btm 15s linear infinite;
     }
     .container .content .content_txt .film_nav > ul{ 
         min-width: 320px; width: 100%;
