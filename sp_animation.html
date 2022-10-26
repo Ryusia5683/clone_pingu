@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/sp_animation.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <script defer src="./common.js"></script>
 </head>
 <body>
     
@@ -114,110 +115,64 @@
                 </ul>
             </div>
         </div>
-            <div class="page_top">
-                <figure>
-                    <img src="./img/common/btn_page_top.png" alt="page_top">
-                </figure>
-            </div>
-            <div class="banner">
-                <ul>
+        <div class="page_top">
+            <figure>
+                <img src="./img/common/btn_page_top.png" alt="page_top">
+            </figure>
+        </div>
+        <div class="banner">
+            <ul>
+                <li>
+                    <a href="https://www.cartoonnetwork.jp/cn_programs" target="_blank">
+                        <img src="./img/common/banner/banner01.png" alt="nhk">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/pingu" target="_blank">
+                        <img src="./img/common/banner/banner02.png" alt="youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Pingu-Official-Page-272005626170011/" target="_blank">
+                        <img src="./img/common/banner/banner03.png" alt="fb">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div>
+                <ul class="share">
                     <li>
-                        <a href="https://www.cartoonnetwork.jp/cn_programs" target="_blank">
-                            <img src="./img/common/banner/banner01.png" alt="nhk">
+                        <figure>
+                            <img src="./img/common/footer/caption_share.png" alt="share">
+                        </figure>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.pingu.jp%2Fbiz%2F">
+                            <img src="./img/common/footer/sns_fb.png" alt="share_fb">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/user/pingu" target="_blank">
-                            <img src="./img/common/banner/banner02.png" alt="youtube">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/Pingu-Official-Page-272005626170011/" target="_blank">
-                            <img src="./img/common/banner/banner03.png" alt="fb">
+                        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.pingu.jp%2Fbiz%2F&text=Pingu%20is%20returning%20to%20television%20with%20new%20stories%20and%20new%20characters%20back%20to%20life%20using%203D%20computer%20graphics.">
+                            <img src="./img/common/footer/sns_tw.png" alt="share_tw">
                         </a>
                     </li>
                 </ul>
+                <ul class="copyright">
+                    <li>
+                        <figure>
+                            <img src="./img/common/footer/logo_scp.jpg" alt="sony_copy">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/common/footer/copy.png" alt="copy">
+                        </figure>
+                    </li>
+                </ul>
             </div>
-            <footer>
-                <div>
-                    <ul class="share">
-                        <li>
-                            <figure>
-                                <img src="./img/common/footer/caption_share.png" alt="share">
-                            </figure>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.pingu.jp%2Fbiz%2F">
-                                <img src="./img/common/footer/sns_fb.png" alt="share_fb">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.pingu.jp%2Fbiz%2F&text=Pingu%20is%20returning%20to%20television%20with%20new%20stories%20and%20new%20characters%20back%20to%20life%20using%203D%20computer%20graphics.">
-                                <img src="./img/common/footer/sns_tw.png" alt="share_tw">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="copyright">
-                        <li>
-                            <figure>
-                                <img src="./img/common/footer/logo_scp.jpg" alt="sony_copy">
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="./img/common/footer/copy.png" alt="copy">
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-
-
-    <script>
-        const btn_menu = document.querySelector('.btn_menu');
-        const nav = document.querySelector('.nav');
-        
-        btn_menu.onclick=function(){
-            btn_menu.classList.toggle('active');
-            nav.classList.toggle('active');
-        }
-
-        const sb_top = document.querySelector('.container .page_top figure')
-
-        sb_top.onclick=function() {
-            document.documentElement.scrollTop = 0;
-        }
-
-
-        const elSnowCont = document.querySelector('.snow');
-
-        let elP = '';
-        for(let i = 0; i < 20; i++){
-            elP += `<p></p>`;
-        }
-        elSnowCont.innerHTML = elP; 
-
-        const elSnow = document.querySelectorAll('.snow p');
-
-        let snowProp = function(n){
-            return Math.floor( Math.random() * n + 15 );
-        }
-        let windowWid = window.innerWidth;
-        let snowPosi = function(n){
-            return Math.floor( Math.random() * n );
-        }
-        let snowAni = function(n){
-            return Math.floor( Math.random() * n + 10 );
-        }
-        elSnow.forEach(function(p,i){
-            snowProp()
-            let snowSize = snowProp(25);
-            elSnow[i].style = `width: ${snowSize}px; height: ${snowSize}px; left: ${snowPosi(windowWid)}px; animation: snow_fall ${snowAni(30)}s ${snowAni(20)}s linear infinite, snow_rotate 10s linear infinite`;
-        });
-
-        
-    </script>
+        </footer>
+    </div>
 
 
 </body>

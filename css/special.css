@@ -8,7 +8,7 @@
 }
 .container .content .content_title{ 
     width: 100%; min-height: 250px;
-    padding: 90px 0; /* 4.737% */
+    padding: 90px 0; 
     position: relative;
     background-color: #00a0e9;
     z-index: 1;
@@ -64,23 +64,18 @@
 .container .content .snow{ z-index: 1;}
 .container .content .content_txt .craft_nav{ width: 100%; height: 123px; }
 .container .content .content_txt .craft_nav > ul{ 
-    width: 34.737%; min-width: 660px;
+    width: 44.526%; min-width: 660px;
     margin: 0 auto;    
-    position: relative;
-    top: -40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .container .content .content_txt .craft_nav > ul > li{ 
     width: 46.97%;
+    transform: translateY(-80%);
     z-index: 2;
-    position: absolute; 
 }
-.container .content .content_txt .craft_nav > ul > li:nth-child(2){ 
-    position: absolute;
-    left: 350px; top: -60px; 
-}
+.container .content .content_txt .craft_nav > ul > li:nth-child(2){ transform: translateY(-60%); }
 .container .content .content_txt .craft_nav > ul > li > a{
     display: inline-block;
     width: 100%;
@@ -188,21 +183,9 @@
     .container .content .content_txt{ min-width: 769px; }
     .container .content .content_txt::before{
         animation: bg_light_blue 20s linear infinite;
-        background-size: 50% auto;
-        top: -10px;
+        background-size: 50% 100%;
     }
     .container .content .content_txt .craft{ min-width: 755px; }
-    
-    /* .container .content .content_txt .craft > li > div > a{ 
-        width: 100%; height: 69.45px;
-        display: block;
-        background: url(../img/special/btn_download_off.png) 0 0 / contain no-repeat;
-        transition: 0.4s ease;
-    }
-    .container .content .content_txt .craft > li > div > a:hover{
-        background: url(../img/special/btn_download_on.png) 0 0 / contain no-repeat;
-        width: 100%;
-    }  */
 }
 /* ==========================1080 end======================= */
 
@@ -222,18 +205,11 @@
 
     .container .content .content_txt{ min-width: 426px; }
     .container .content .content_txt::before{
-        /* background-size: 30% 75%; */
-        /* top: -16px; */
-        animation: bg_light_blue 20s linear infinite;
+        animation: bg_light_blue 15s linear infinite;
     }
     .container .content .content_txt .craft_nav{ width: 100%; height: 123px; }
     .container .content .content_txt .craft_nav > ul{ 
         width: 90%; min-width: 426px;
-        top: -5vw;
-    }
-    .container .content .content_txt .craft_nav > ul > li:nth-child(2){ 
-        position: absolute;
-        left: 53%; top: -8vw; 
     }
 
     .container .content .content_txt .craft{

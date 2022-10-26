@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/original.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <script defer src="./common.js"></script>
 </head>
 <body>
     
@@ -452,53 +453,6 @@
             </div>
         </footer>
     </div>
-
-
-    <script>
-        const btn_menu = document.querySelector('.btn_menu');
-        const nav = document.querySelector('.nav');
-        
-        btn_menu.onclick=function(){
-            btn_menu.classList.toggle('active');
-            nav.classList.toggle('active');
-        }
-
-        const sb_top = document.querySelector('.container .page_top figure')
-
-        sb_top.onclick=function() {
-            document.documentElement.scrollTop = 0;
-        }
-
-
-        const elSnowCont = document.querySelector('.snow');
-
-        let elP = '';
-        for(let i = 0; i < 20; i++){
-            elP += `<p></p>`;
-        }
-        elSnowCont.innerHTML = elP; 
-
-        const elSnow = document.querySelectorAll('.snow p');
-
-        let snowProp = function(n){
-            return Math.floor( Math.random() * n + 15 );
-        }
-        let windowWid = window.innerWidth;
-        let snowPosi = function(n){
-            return Math.floor( Math.random() * n );
-        }
-        let snowAni = function(n){
-            return Math.floor( Math.random() * n + 10 );
-        }
-        elSnow.forEach(function(p,i){
-            snowProp()
-            let snowSize = snowProp(25);
-            elSnow[i].style = `width: ${snowSize}px; height: ${snowSize}px; left: ${snowPosi(windowWid)}px; animation: snow_fall ${snowAni(30)}s ${snowAni(20)}s linear infinite, snow_rotate 10s linear infinite`;
-        });
-
-
-    </script>
-
 
 
 </body>

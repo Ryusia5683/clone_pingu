@@ -69,7 +69,6 @@
 
 .container .content .content_txt > div{
     width: 100%;
-    /* margin-top: 120px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,8 +118,7 @@
     .container .content .content_txt{ min-width: 769px; }
     .container .content .content_txt::before{
         animation: bg_lgt_yellow 15s linear infinite;
-        background-size: 50% auto;
-        top: -10px;
+        background-size: 50% 100%;
     }
     .container .content .content_txt > div .book{ min-width: 755px; }
     .container .page_top > figure > img{ z-index: 2; }

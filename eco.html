@@ -19,7 +19,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/eco.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <script defer src="./common.js"></script>
+    <script defer src="./eco.js"></script>
 </head>
 <body>
     
@@ -150,140 +152,6 @@
             </div>
         </footer>
     </div>
-
-
-    <script>
-        const btn_menu = document.querySelector('.btn_menu');
-        const nav = document.querySelector('.nav');
-        
-        btn_menu.onclick=function(){
-            btn_menu.classList.toggle('active');
-            nav.classList.toggle('active');
-        }
-
-        const sb_top = document.querySelector('.container .page_top figure')
-
-        sb_top.onclick=function() {
-            document.documentElement.scrollTop = 0;
-        }
-
-
-
-        const elSnowCont = document.querySelector('.snow');
-
-        let elP = '';
-        for(let i = 0; i < 20; i++){
-            elP += `<p></p>`;
-        }
-        elSnowCont.innerHTML = elP; 
-
-        const elSnow = document.querySelectorAll('.snow p');
-
-        let snowProp = function(n){
-            return Math.floor( Math.random() * n + 15 );
-        }
-        let windowWid = window.innerWidth;
-        let snowPosi = function(n){
-            return Math.floor( Math.random() * n );
-        }
-        let snowAni = function(n){
-            return Math.floor( Math.random() * n + 10 );
-        }
-        elSnow.forEach(function(p,i){
-            snowProp()
-            let snowSize = snowProp(25);
-            elSnow[i].style = `width: ${snowSize}px; height: ${snowSize}px; left: ${snowPosi(windowWid)}px; animation: snow_fall ${snowAni(30)}s ${snowAni(20)}s linear infinite, snow_rotate 10s linear infinite`;
-        });
-
-
-        const book = document.querySelector('.book');
-        const btnNext = document.querySelector('.page_next');
-        const btnPrev = document.querySelector('.page_prev');
-
-        let bookImg = [
-            {
-                leftImg : '01',
-                leftAlt : 'L',
-                rightImg : '02',
-                rightAlt : 'R'
-            },
-            {
-                leftImg : '03',
-                leftAlt : 'L',
-                rightImg : '04',
-                rightAlt : 'R'
-            },
-            {
-                leftImg : '05',
-                leftAlt : 'L',
-                rightImg : '06',
-                rightAlt : 'R'
-            },
-            {
-                leftImg : '07',
-                leftAlt : 'L',
-                rightImg : '08',
-                rightAlt : 'R'
-            },
-            {
-                leftImg : '09',
-                leftAlt : 'L',
-                rightImg : '10',
-                rightAlt : 'R'
-            },
-            {
-                leftImg : '11',
-                leftAlt : 'L',
-                rightImg : '12',
-                rightAlt : 'R'
-            },
-            {
-                leftImg : '13',
-                leftAlt : 'L',
-                rightImg : '14',
-                rightAlt : 'R'
-            },
-            {
-                leftImg : '15',
-                leftAlt : 'L',
-                rightImg : '16',
-                rightAlt : 'R'
-            }
-        ];
-        let curPage = '';
-        bookImg.forEach(element => {
-            curPage += `<div>
-                <figure><img src="./img/ecology/p_${element.leftImg}.gif" alt="p01_${element.leftAlt}"></figure>
-                <figure><img src="./img/ecology/p_${element.rightImg}.gif" alt="p01_${element.rightAlt}"></figure>
-            </div>`;
-        })
-        book.innerHTML = curPage;
-
-        const page = document.querySelectorAll('.book div');
-        let idx = 0;
-
-        page[0].classList.add('active');
-        function nextPage(i) {
-            page[i-1].classList.remove('active');
-            page[i].classList.add('active');
-        }
-        function prevPage(i){
-            page[i].classList.remove('active');
-            page[i-1].classList.add('active');
-        }
-        
-        btnNext.addEventListener('click', function(){
-            if(idx < page.length-1){
-                nextPage(++idx);
-            }
-        })
-        btnPrev.addEventListener('click', function(){
-            if(idx > 0){
-                prevPage(idx--);
-            }
-        })
-
-    </script>
 
 
 </body>
