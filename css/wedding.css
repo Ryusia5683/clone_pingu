@@ -103,40 +103,6 @@
 }
 .container .content .content_txt .film_nav > ul > li > a > img{ width: 100%; }
 
-.container .content .content_txt .index{ 
-    width: 100%; 
-    margin: 0 auto;
-}
-.container .content .content_txt .index .index_txt{
-    width: 100%;
-}
-.container .content .content_txt .index .index_txt > p{
-    width: 50.526%; min-width: 960px;
-    margin: 0 auto;
-    padding: 1.042% 0;
-    font-size: 1.571em;
-    color: #00a0e9;
-    font-weight: bold;
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 0.25em;
-}
-.container .content .content_txt .index > div{
-    width: 52.632%; min-width: 1000px;
-    margin: 5% auto 4%;
-}
-.container .content .content_txt .index > div > ul{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.container .content .content_txt .index > div > ul > li{
-    width: 30.5%;
-    margin: 0 0 63px 0;
-}
-.container .content .content_txt .index > div > ul > li > figure{ width: 100%;}
-.container .content .content_txt .index > div > ul > li > figure > img{ width: 100%; }
 
 
 /* ============================1080======================== */
@@ -154,9 +120,7 @@
     }
     .container .content .content_txt .film_nav > ul{ min-width: 769px; }
     
-    .container .content .content_txt .index{ min-width: 769px; }
-    .container .content .content_txt .index .index_txt > p{ min-width: 730px; }
-    .container .content .content_txt .index > div{ min-width: 760px; }
+
 }
 /* ==========================1080 end======================= */
 
@@ -188,27 +152,7 @@
     }
     .container .content .content_txt .film_nav > ul > li{ width: 33.3%; }
 
-    .container .content .content_txt .index{ min-width: 320px; }
-    .container .content .content_txt .index .index_txt{ min-width: 320px; }
-    .container .content .content_txt .index .index_txt > p{
-        width: 100%; min-width: 300px;
-        padding: 1.042% 3%;
-        font-size: 1.142em;
-        line-height: 1.5;
-    }
-    .container .content .content_txt .index > div{
-        width: 85%; min-width: 320px;
-        margin: 10% auto 8%;
-    }
-    .container .content .content_txt .index > div > ul{
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .container .content .content_txt .index > div > ul > li{
-        width: 100%;
-        margin: 0 0 7.5% 0;
-    }
+
 }
 /* ======================768 end========================= */
 

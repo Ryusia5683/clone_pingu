@@ -38,6 +38,9 @@ let snowPosi = function(n){
 let snowAni = function(n){
     return Math.floor( Math.random() * n + 10 );
 }
+let snowAniShort = function(n){
+    return Math.floor( Math.random() * n + 100 );
+}
 elSnow.forEach(function(p,i){
     snowProp()
     let snowSize = snowProp(25);
