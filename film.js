@@ -22,16 +22,18 @@ function contentURL(url){
 
 // filmNavBtn이 돌 때 filmNav active href url 입력
 // filmNav[1] active 일 때 '.series_Nav' display block, seriesNavBtn이 돌 때 seriesNav active img 변경 href url 입력
-
+let actTemp = 0;
 filmNavBtn.forEach((ele, key) => { // film navigation tab
     ele.addEventListener('click', function(){
         event.preventDefault();
         filmNav.forEach((e) => { // film navigation li
             e.classList.remove('active');
+            navBg.classList.remove(`active${actTemp}`);
         })
         let url = ele.getAttribute('href');
         filmNav[key].classList.add('active');
         navBg.classList.add(`active${key + 1}`);
+        actTemp = key + 1;
         bgColor(key);
         if( filmNav[1].classList.contains('active') ){
             seriesTab.style = 'display: block;'; // series navigation visible
