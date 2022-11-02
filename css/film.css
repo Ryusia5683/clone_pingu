@@ -137,7 +137,7 @@
 }
 .container .content .content_txt .film_nav > ul > li > a > img{ width: 100%; }
 
-.container .content .content_txt .film_nav .series_nav{ width: 100%; display: none; }
+.container .content .content_txt .film_nav .series_nav{ padding-bottom: 1%; width: 100%; display: none; }
 .container .content .content_txt .film_nav .series_nav > ul{
     width: 39.264%; min-width: 745px;
     margin: 0 auto;
@@ -257,6 +257,9 @@
         animation: bg_lgt_blue 20s linear infinite;
         animation: bg_pink 20s linear infinite; */
     }
+    .container .content .content_txt .film_nav.active1::before{ background-size: 50% 100%; }
+    .container .content .content_txt .film_nav.active2::before{ background-size: 50% 100%; }
+    .container .content .content_txt .film_nav.active3::before{ background-size: 50% 100%; }
     .container .content .content_txt .film_nav::after{
         background-size: 50% 100%;
         animation-duration: 20s;
@@ -264,8 +267,13 @@
         animation: bg_lgt_blue_btm 20s linear infinite;
         animation: bg_pink_btm 20s linear infinite; */
     }
+    .container .content .content_txt .film_nav.active1::after{ background-size: 50% 100%; }
+    .container .content .content_txt .film_nav.active2::after{ background-size: 50% 100%; }
+    .container .content .content_txt .film_nav.active3::after{ background-size: 50% 100%; }
+
     .container .content .content_txt .film_nav > ul{ min-width: 769px; }
     .container .content .content_txt .film_nav > ul > li{ width: 29%; }
+    .container .content .content_txt .film_nav .series_nav{ padding-bottom: 2%; }
 
     .container .content .content_txt .film_intro{ min-width: 769px; }
     .container .content .content_txt .film_intro > ul > li{ width: 29%; }
@@ -296,28 +304,37 @@
 
     .container .content .content_txt .film_nav::before{ 
         animation-duration: 15s;
+        background-size: 50% 50%;
         /* animation: bg_yellow 15s linear infinite;
         animation: bg_lgt_blue 15s linear infinite;
         animation: bg_pink 15s linear infinite; */
     }
+    .container .content .content_txt .film_nav.active1::after{ background-size: 50% 50%; }
+    .container .content .content_txt .film_nav.active2::after{ background-size: 50% 50%; }
+    .container .content .content_txt .film_nav.active3::after{ background-size: 50% 50%; }
     .container .content .content_txt .film_nav::after{
         animation-duration: 15s;
+        background-size: 50% 50%;
         /* animation: bg_yellow_btm 15s linear infinite;
         animation: bg_lgt_blue_btm 15s linear infinite;
         animation: bg_pink_btm 15s linear infinite; */
     }
+    .container .content .content_txt .film_nav.active1::after{ background-size: 50% 50%; }
+    .container .content .content_txt .film_nav.active2::after{ background-size: 50% 50%; }
+    .container .content .content_txt .film_nav.active3::after{ background-size: 50% 50%; }
     .container .content .content_txt .film_nav > ul{ 
         min-width: 320px; width: 100%;
         justify-content: center;
     }
     .container .content .content_txt .film_nav > ul > li{ width: 33.3%; }
 
+    .container .content .content_txt .film_nav .series_nav{ padding-bottom: 5%; }
     .container .content .content_txt .film_nav .series_nav > ul{
-        width: 100%; min-width: 320px;
+        width: 80%; min-width: 320px;
         margin: 10px auto 0;
         flex-wrap: wrap;
     }
-    .container .content .content_txt .film_nav .series_nav > ul > li{ width: 33.3%; text-align: center; }
+    .container .content .content_txt .film_nav .series_nav > ul > li{ width: 25.2%; text-align: center; }
 
     .container .content .content_txt .film_intro{ 
         min-width: 320px; width: 100%; 
