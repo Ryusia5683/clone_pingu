@@ -1,0 +1,54 @@
+{
+    "book_PC" : [
+        {
+            "left" : "p_01.gif",
+            "right" : "p_02.gif"
+        },
+        {
+            "left" : "p_03.gif",
+            "right" : "p_04.gif"
+        },
+        {
+            "left" : "p_05.gif",
+            "right" : "p_06.gif"
+        },
+        {
+            "left" : "p_07.gif",
+            "right" : "p_08.gif"
+        },
+        {
+            "left" : "p_09.gif",
+            "right" : "p_10.gif"
+        },
+        {
+            "left" : "p_11.gif",
+            "right" : "p_12.gif"
+        },
+        {
+            "left" : "p_13.gif",
+            "right" : "p_14.gif"
+        },
+        {
+            "left" : "p_15.gif",
+            "right" : "p_16.gif"
+        }
+    ],
+    "book_SM" : [
+        { "img" : "p_01.gif" },
+        { "img" : "p_02.gif" },
+        { "img" : "p_03.gif" },
+        { "img" : "p_04.gif" },
+        { "img" : "p_05.gif" },
+        { "img" : "p_06.gif" },
+        { "img" : "p_07.gif" },
+        { "img" : "p_08.gif" },
+        { "img" : "p_09.gif" },
+        { "img" : "p_10.gif" },
+        { "img" : "p_11.gif" },
+        { "img" : "p_12.gif" },
+        { "img" : "p_13.gif" },
+        { "img" : "p_14.gif" },
+        { "img" : "p_15.gif" },
+        { "img" : "p_16.gif" }
+    ]
+}

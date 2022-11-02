@@ -88,8 +88,10 @@
     display: none;
 }
 
-.container .content .content_txt > div .book > div.active{ display: flex; }
+.container .content .content_txt > div .book > div.PC.active{ display: flex; }
+.container .content .content_txt > div .book > div.SM.active{ display: block; }
 .container .content .content_txt > div .book > div > figure{ width: 50%; }
+.container .content .content_txt > div .book > div.SM > figure{ width: 100%; }
 .container .content .content_txt > div .book > div > figure > img{ width: 100%; }
 
 .container .content .content_txt > div .book_nav{ width: 100%; }
@@ -160,10 +162,6 @@
     
     .container .content .content_txt > div .book{
         width: 90%; min-width: 300px;
-    }
-    .container .content .content_txt > div .book > div{
-        display: flex;
-        display: none;
     }
 }
 /* ======================768 end========================= */
