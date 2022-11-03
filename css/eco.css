@@ -85,11 +85,21 @@
     display: flex;
     position: relative;
     z-index: 4;
+    animation: bookHide 2s;
     display: none;
 }
+@keyframes bookHide{
+    0%{ opacity: 1; }
+    100%{ opacity: 0; }
+}
 
-.container .content .content_txt > div .book > div.PC.active{ display: flex; }
-.container .content .content_txt > div .book > div.SM.active{ display: block; }
+.container .content .content_txt > div .book > div.PC.active{ display: flex; animation: bookShow 2s; }
+.container .content .content_txt > div .book > div.SM.active{ display: block; animation: bookShow 2s; }
+@keyframes bookShow{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
 .container .content .content_txt > div .book > div > figure{ width: 50%; }
 .container .content .content_txt > div .book > div.SM > figure{ width: 100%; }
 .container .content .content_txt > div .book > div > figure > img{ width: 100%; }

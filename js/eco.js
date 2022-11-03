@@ -77,7 +77,6 @@ fetch( "./eco.json" )
         if(idx < pagePC.length-1 && viewWidth > 500){
             nextPagePC(++idx);
         } else if ( idx < pageSM.length - 1 && viewWidth <= 500){
-            console.log(idx, pageSM.length-1)
             nextPageSM(++idx);
         }
     })

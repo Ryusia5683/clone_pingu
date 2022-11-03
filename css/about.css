@@ -56,7 +56,8 @@
     position: absolute;
     background: url(../img/about/decor_cha_01.png) no-repeat left top;
     background-size: 100% auto;
-    left: -12%; top: 27%;
+    left: 0; top: 0;
+    transform: translate(-135%, 60%);
 }
 .container .content .content_txt .intro > h3::after{
     content: '';
@@ -64,7 +65,8 @@
     position: absolute;
     background: url(../img/about/decor_cha_02.png) no-repeat right top;
     background-size: 100% auto;
-    right: -10%; top: 37%;
+    top: 0; right: 0;
+    transform: translate(125%, 118%);
 }
 .container .content .content_txt .intro > p{
     font-size: 1.285715em;
@@ -86,9 +88,10 @@
     content: '';
     position: absolute;
     background: url(../img/about/decor_cha_03.png) no-repeat left top;
-    right: 8%; top: 3%;
     width: 34%; height: 4.8%;
     background-size: 100% auto;
+    right: 0; top: 0;
+    transform: translate(-24%, 63%);
 }
 .container .content .content_txt .character > ul::after{
     content: '';
@@ -96,7 +99,8 @@
     background: url(../img/about/decor_cha_04.png) no-repeat left bottom;
     width: 38.4%; height: 5.975%;
     background-size: 100% auto;
-    left: 5%; bottom: 9%;
+    left: 0; bottom: 0;
+    transform: translate(13%, -150%);
 }
 .container .content .content_txt .character > ul > li{ 
     margin-bottom: 170px;
@@ -158,11 +162,11 @@
     }
     .container .content .content_txt .intro > h3::before{
         width: 60px; height: 87px;
-        left: 20vw; top: -13vh;
+        transform: translate(430%, -130%);
     }
     .container .content .content_txt .intro > h3::after{
         width: 52px; height: 58px;
-        right: 20vw; top: -10vh;
+        transform: translate(-510%, -155%);
     }
     .container .content .content_txt .intro > p{
         font-size: 1.1em;
@@ -182,11 +186,11 @@
     }
     .container .content .content_txt .character > ul::before{
         width: 40%; height: 3%;
-        right: 30%; top: -4%;
+        transform: translate(-80%, -160%);
     }
     .container .content .content_txt .character > ul::after{
         width: 38.4%; height: 5.975%;
-        left: 30%; bottom: -4%;
+        transform: translate(80%, 70%);
     }
     .container .content .content_txt .character > ul > li{ 
         margin-bottom: 100px;

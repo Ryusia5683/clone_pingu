@@ -20,8 +20,6 @@ function contentURL(url){
     })
 }
 
-// filmNavBtn이 돌 때 filmNav active href url 입력
-// filmNav[1] active 일 때 '.series_Nav' display block, seriesNavBtn이 돌 때 seriesNav active img 변경 href url 입력
 let actTemp = 0;
 filmNavBtn.forEach((ele, key) => { // film navigation tab
     ele.addEventListener('click', function(){
