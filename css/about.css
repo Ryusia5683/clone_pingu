@@ -42,6 +42,7 @@
 }
 .container .content .content_txt .intro > h3{
     margin-bottom: 13px;
+    width: 95%;
     font-size: 1.57143em;
     font-weight: bold;
     color: #00a0e9;
@@ -130,6 +131,8 @@
     }
     .container .content .content_txt{ min-width: 769px; }
     .container .content .content_txt .intro{ min-width: 650px; }
+    .container .content .content_txt .intro > h3::before{ transform: translate(-135%, 75%);}
+    .container .content .content_txt .intro > h3::after{}
     .container .content .content_txt .character > ul{ min-width: 650px; }
 /* ==========================1080 end======================= */
 }
@@ -162,11 +165,13 @@
     }
     .container .content .content_txt .intro > h3::before{
         width: 60px; height: 87px;
-        transform: translate(430%, -130%);
+        transform: translate(0, -130%);
+        left: 40%;
     }
     .container .content .content_txt .intro > h3::after{
         width: 52px; height: 58px;
-        transform: translate(-510%, -155%);
+        transform: translate(150%, -155%);
+        right: auto; left: 40%;
     }
     .container .content .content_txt .intro > p{
         font-size: 1.1em;
@@ -213,5 +218,10 @@
         letter-spacing: 0.1em;
         line-height: 2.3;
     }
+}
 /* =======================768 end========================== */
+
+@media (max-width: 550px){
+    .container .content .content_txt .intro > h3::before{ left: 35%; }
+    .container .content .content_txt .intro > h3::after{ left: 35%; }
 }
