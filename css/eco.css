@@ -85,7 +85,7 @@
     display: flex;
     position: relative;
     z-index: 4;
-    animation: bookHide 2s;
+    animation: bookHide 1s;
     display: none;
 }
 @keyframes bookHide{
@@ -93,8 +93,8 @@
     100%{ opacity: 0; }
 }
 
-.container .content .content_txt > div .book > div.PC.active{ display: flex; animation: bookShow 2s; }
-.container .content .content_txt > div .book > div.SM.active{ display: block; animation: bookShow 2s; }
+.container .content .content_txt > div .book > div.PC.active{ display: flex; animation: bookShow 1s; }
+.container .content .content_txt > div .book > div.SM.active{ display: block; animation: bookShow 1s; }
 @keyframes bookShow{
     0%{ opacity: 0; }
     100%{ opacity: 1; }
