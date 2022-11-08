@@ -134,19 +134,6 @@ a{text-decoration: none;}
 }
 
 
-
-.container > header .screen{
-    left: 0; top: 0;
-    width: 100vw; height: 200vmax;
-    margin: 0; padding: 0;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 5;
-    transition: 0.2s ease;
-    display: none;
-}
-
-
 .container .content{ 
     width: 100%;
     position: relative;
